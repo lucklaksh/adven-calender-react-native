@@ -6,19 +6,21 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 const description = `
 # Markdown
-
-***complete the assignments***
--create the componets and others
--create a custom files and cores
+Animated splash screen
 `;
 
 const DayDetailsScreen = () => {
   return (
     <SafeAreaView edges={['bottom']} style={{flex:1}}>
-      <Stack.Screen options={{ title: 'Day3: Markdown'}} />
+      <Stack.Screen options={{ title: 'Day4: Splash Screen'}} />
+      
       <MarkdownDisplay>{description}</MarkdownDisplay>
-      <Link href="/day3/editor" asChild>
-        <Button title="Go to editor" />
+      
+      <Link href="/day4/animation" asChild>
+        <Button title="Go to animation" />
+      </Link>
+      <Link href="/day4/splash" asChild>
+        <Button title="Go to splash screen animation" />
       </Link>
     </SafeAreaView>
   ); 
